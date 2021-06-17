@@ -1,7 +1,9 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
-function Quiz() {
-	return <div>Quiz</div>;
+function Quiz(props) {
+	const params = useParams();
+	return <div>Quiz {params.id}</div>;
 }
 
 export default Quiz;

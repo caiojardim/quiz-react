@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Quizes(props) {
 	return (
 		<div className="quizes-container">
-			<Link to="/quiz" className="quizes-card">
+			<Link to="/quiz/1" className="quizes-card">
 				<img
 					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
 					alt="Imagem Naruto"
