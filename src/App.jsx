@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/templates/Header";
-import Quizes from "./components/templates/Quizes";
+import Home from "./pages/Home";
 
 function App() {
 	return (
 		<div className="container">
-			<Header />
-			<Quizes />
+			<Home />
 		</div>
 	);
 }
