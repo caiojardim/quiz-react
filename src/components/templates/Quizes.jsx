@@ -9,49 +9,7 @@ function Quizes(props) {
 					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
 					alt="Imagem Naruto"
 				/>
-				<span></span>
-			</a>
-			<a href="#" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
-				<span></span>
-			</a>
-			<a href="#" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
-				<span></span>
-			</a>
-			<a href="#" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
-				<span></span>
-			</a>
-			<a href="#" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
-				<span></span>
-			</a>
-			<a href="#" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
-				<span></span>
-			</a>
-			<a href="#" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
-				<span></span>
+				<div>Você realmente conhece o Naruto? </div>
 			</a>
 		</div>
 	);
