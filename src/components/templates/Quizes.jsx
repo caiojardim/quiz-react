@@ -6,11 +6,17 @@ function Quizes(props) {
 	return (
 		<div className="quizes-container">
 			<Link to="/quiz/1" className="quizes-card">
-				<img
-					src="https://criticalhits.com.br/wp-content/uploads/2019/01/naruto-uzumaki_qabz.png"
-					alt="Imagem Naruto"
-				/>
+				{/* imgs tamanho: 1440 x 1080 */}
+				<img src="assets/quizes-imgs/naruto.png" alt="Imagem Naruto" />
 				<div>Você realmente conhece o Naruto? </div>
+			</Link>
+			<Link to="/quiz/2" className="quizes-card">
+				<img src="assets/quizes-imgs/goku.jpg" alt="Imagem Goku" />
+				<div>Você realmente conhece o Goku? </div>
+			</Link>
+			<Link to="/quiz/3" className="quizes-card">
+				<img src="assets/quizes-imgs/friends.jpg" alt="Imagem Friends" />
+				<div>Você realmente conhece o Friends? </div>
 			</Link>
 		</div>
 	);
