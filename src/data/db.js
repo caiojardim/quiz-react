@@ -16,4 +16,33 @@ export const quizes = [
 	},
 ];
 
-export const quiz = [];
+export const quiz = [
+	{
+		id: 1,
+		questions: [
+			{
+				title: "Quantas caldas tem a raposa de naruto?",
+				img: "assets/quizes-imgs/naruto.png",
+				alternatives: [
+					{
+						id: 1,
+						alt: "7",
+					},
+					{
+						id: 2,
+						alt: "1",
+					},
+					{
+						id: 3,
+						alt: "9",
+					},
+					{
+						id: 4,
+						alt: "21",
+					},
+				],
+				answers: 3,
+			},
+		],
+	},
+];
