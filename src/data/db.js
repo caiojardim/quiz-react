@@ -16,7 +16,7 @@ export const quizes = [
 	},
 ];
 
-export const quiz = [
+export const allQuiz = [
 	{
 		id: 1,
 		questions: [
