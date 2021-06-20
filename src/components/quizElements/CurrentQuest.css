@@ -1,0 +1,25 @@
+.numbers-container {
+	display: flex;
+	justify-content: flex-start;
+	overflow: hidden;
+	gap: 0.5rem;
+
+	background-color: #4318ff;
+	color: #ffffff;
+	box-shadow: 0 0 0.2em #000000bb;
+
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 0.8rem;
+}
+
+.number {
+	display: flex;
+	background-color: #2200b7;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+
+.current {
+	background-color: #11047a;
+}
