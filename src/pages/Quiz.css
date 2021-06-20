@@ -1,0 +1,41 @@
+.quiz-container {
+	max-width: 700px;
+	align-self: center;
+}
+
+.img-container {
+	padding: 1rem;
+}
+
+.question-img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.question-container {
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+
+.question-container .alt {
+	text-align: left;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+
+	border: 1px solid #2200b7;
+	border-radius: 10px;
+
+	background-color: #e9edf4;
+
+	color: #2200b7;
+}
+
+.question-container .alt:hover {
+	border: 1px solid #e9edf4;
+	border-radius: 10px;
+
+	background-color: #2200b7;
+
+	color: #e9edf4;
+}
