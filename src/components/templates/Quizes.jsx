@@ -6,9 +6,9 @@ import { quizes } from "../../data/db";
 function Quizes(props) {
 	return (
 		<div className="quizes-container">
-			{quizes.map((quiz) => {
+			{quizes.map((quiz, i) => {
 				return (
-					<Link to={`/quiz/${quiz.id}`} className="quizes-card">
+					<Link to={`/quiz/${quiz.id}`} className="quizes-card" key={i}>
 						{/* imgs tamanho: 1440 x 1080 */}
 						<img src={quiz.img} alt={quiz.title} />
 						<div>{quiz.title}</div>
