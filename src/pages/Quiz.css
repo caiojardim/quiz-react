@@ -4,7 +4,21 @@
 }
 
 .img-container {
-	padding: 1rem;
+	margin: 1rem;
+	position: relative;
+}
+
+.img-container .question-title {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+
+	font-size: 1.3rem;
+
+	background-color: #4318ff;
+	color: #ffffff;
+	padding: 0.5rem 1rem;
+	border-radius: 0.8rem;
 }
 
 .question-img {

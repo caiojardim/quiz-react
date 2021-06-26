@@ -22,9 +22,9 @@ function Quiz(props) {
 								src={"../" + question.img}
 								alt="Img naruto"
 							/>
+							<div className="question-title">{question.title}</div>
 						</div>
 						<div className="question-container">
-							<div>{question.title}</div>
 							{question.alternatives.map((alternative) => {
 								return (
 									<button
