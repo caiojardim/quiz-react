@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./CurrentQuest.css";
 import cx from "classname";
 
@@ -8,8 +8,6 @@ function CurrentQuest(props) {
 	}
 
 	const quantity = generateRange(props.quantity);
-
-	console.log(props.answersList);
 
 	return (
 		<div className="numbers-container">
