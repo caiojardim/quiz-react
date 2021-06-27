@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import CurrentQuest from "../components/quizElements/CurrentQuest";
+import Header from "../components/templates/Header";
 import { quizes } from "../data/db";
 import "./Quiz.css";
 import cx from "classname";
@@ -16,6 +17,11 @@ function Quiz(props) {
 		green: null,
 	});
 	const [answersList, setAnswersList] = useState([]);
+
+	function ResetQuiz() {
+		setCurrentQuestion(1);
+		setAnswersList([]);
+	}
 
 	function calculateCorrectAnswers(answersList) {
 		const correctAnswers = answersList.reduce((corrects, answer) => {
@@ -61,7 +67,14 @@ function Quiz(props) {
 
 	return (
 		<div className="quiz-container">
-			<CurrentQuest quantity={questions.length} current={currentQuestion} />
+			{!(currentQuestion > questions.length) && (
+				<CurrentQuest
+					quantity={questions.length}
+					current={currentQuestion}
+					/* answersList={answersList} */
+				/>
+			)}
+
 			{questions.map((question, i) => {
 				return (
 					<div key={i}>
@@ -105,8 +118,20 @@ function Quiz(props) {
 			})}
 			{currentQuestion > questions.length && (
 				<div>
-					<h1>Você acertou {calculateCorrectAnswers(answersList)} questões</h1>
-					<button>Refazer</button>
+					<Header title="QUIZ" />
+					<div className="finishQuizImg">
+						<img src={"../" + quiz.img} alt={quiz.title} />
+						<button onClick={ResetQuiz}>Refazer</button>
+						<div>{`${calculateCorrectAnswers(answersList)} / ${
+							questions.length
+						}`}</div>
+					</div>
+					<h1>
+						Você acertou{" "}
+						{calculateCorrectAnswers(answersList) === 1
+							? `${calculateCorrectAnswers(answersList)} questão`
+							: `${calculateCorrectAnswers(answersList)} questões`}{" "}
+					</h1>
 				</div>
 			)}
 		</div>
