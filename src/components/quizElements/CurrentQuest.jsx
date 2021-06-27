@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CurrentQuest.css";
+import cx from "classname";
 
 function CurrentQuest(props) {
 	function generateRange(n) {
@@ -8,18 +9,29 @@ function CurrentQuest(props) {
 
 	const quantity = generateRange(props.quantity);
 
+	console.log(props.answersList);
+
 	return (
 		<div className="numbers-container">
-			{quantity.map((number) => {
-				if (number === props.current) {
-					return (
-						<div key={number} className="number current">
-							{number}
-						</div>
-					);
-				}
+			{quantity.map((number, index) => {
 				return (
-					<div key={number} className="number">
+					<div
+						key={number}
+						className={cx(
+							"number",
+							{ current: number === props.current },
+							{
+								green: props.answersList[index]
+									? props.answersList[index][1]
+									: "",
+							},
+							{
+								red: props.answersList[index]
+									? !props.answersList[index][1]
+									: "",
+							}
+						)}
+					>
 						{number}
 					</div>
 				);

@@ -67,11 +67,12 @@ function Quiz(props) {
 
 	return (
 		<div className="quiz-container">
+			{/* {console.log(answersList)} */}
 			{!(currentQuestion > questions.length) && (
 				<CurrentQuest
 					quantity={questions.length}
 					current={currentQuestion}
-					/* answersList={answersList} */
+					answersList={answersList}
 				/>
 			)}
 
