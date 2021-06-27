@@ -25,7 +25,7 @@ export const quizes = [
 						alt: "21",
 					},
 				],
-				answers: 3,
+				answer: 3,
 			},
 			{
 				title: "Por quem naruto era apaixonado quando era criança?",
@@ -48,7 +48,7 @@ export const quizes = [
 						alt: "Sakura",
 					},
 				],
-				answers: 4,
+				answer: 4,
 			},
 		],
 	},

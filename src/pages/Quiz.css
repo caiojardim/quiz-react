@@ -56,3 +56,12 @@
 
 	color: #e9edf4;
 }
+
+.question-container .red {
+	background-color: #e31a1a;
+	color: #fff;
+}
+.question-container .green {
+	background-color: #01b574;
+	color: #fff;
+}
