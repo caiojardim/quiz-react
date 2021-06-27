@@ -46,10 +46,11 @@
 	background-color: #e9edf4;
 
 	color: #2200b7;
+
+	transition: 0.3s;
 }
 
 .question-container .alt:hover {
-	border: 1px solid #e9edf4;
 	border-radius: 10px;
 
 	background-color: #2200b7;
@@ -57,11 +58,11 @@
 	color: #e9edf4;
 }
 
-.question-container .red {
+.question-container .alt.red {
 	background-color: #e31a1a;
 	color: #fff;
 }
-.question-container .green {
+.question-container .alt.green {
 	background-color: #01b574;
 	color: #fff;
 }

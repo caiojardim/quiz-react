@@ -5,6 +5,7 @@ export const quizes = [
 		img: "assets/quizes-imgs/naruto.png",
 		questions: [
 			{
+				id: 1,
 				title: "Quantas caldas tem a raposa de naruto?",
 				img: "assets/quizes-imgs/naruto.png",
 				alternatives: [
@@ -28,6 +29,7 @@ export const quizes = [
 				answer: 3,
 			},
 			{
+				id: 2,
 				title: "Por quem naruto era apaixonado quando era criança?",
 				img: "assets/quizes-imgs/naruto.png",
 				alternatives: [
