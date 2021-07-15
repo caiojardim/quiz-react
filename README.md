@@ -1,6 +1,6 @@
 <h1>Quiz</h1>
 
-<p>This project had the idea of recreating creating a quiz game with react</p>
+<p>This project had the idea of creating a quiz game with react</p>
 
 <h4>Demo: https://cj-quiz-react.netlify.app</h4>
 
